@@ -16,6 +16,7 @@
 		3C9CF7942993C86C0062C514 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CF7962993C86C0062C514 /* Localizable.strings */; };
 		3C9CF79A2993CD8E0062C514 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CF7992993CD8E0062C514 /* UIFont+Extension.swift */; };
 		3C9CF79C2993CF3E0062C514 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CF79B2993CF3E0062C514 /* Montserrat-Bold.ttf */; };
+		490120ED3F77FE85CD735148 /* Pods_DayToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B6C74DE7051F8434C09586A /* Pods_DayToDo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		3C9CF7972993C8700062C514 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C9CF7992993CD8E0062C514 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		3C9CF79B2993CF3E0062C514 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		4B6C74DE7051F8434C09586A /* Pods_DayToDo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayToDo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9B0CB30136435E1BA4F5E9 /* Pods-DayToDo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayToDo.release.xcconfig"; path = "Target Support Files/Pods-DayToDo/Pods-DayToDo.release.xcconfig"; sourceTree = "<group>"; };
+		CE7B9DBE37CCFDD702504028 /* Pods-DayToDo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayToDo.debug.xcconfig"; path = "Target Support Files/Pods-DayToDo/Pods-DayToDo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				490120ED3F77FE85CD735148 /* Pods_DayToDo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,8 @@
 			children = (
 				3C9549A329920B5A00704A96 /* DayToDo */,
 				3C9549A229920B5A00704A96 /* Products */,
+				5806FFC1B9B0FEF6D67A14D5 /* Pods */,
+				FF7A8D778FB4513FEE98421F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +102,24 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		5806FFC1B9B0FEF6D67A14D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B9DBE37CCFDD702504028 /* Pods-DayToDo.debug.xcconfig */,
+				4C9B0CB30136435E1BA4F5E9 /* Pods-DayToDo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF7A8D778FB4513FEE98421F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B6C74DE7051F8434C09586A /* Pods_DayToDo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C9549B529920B5C00704A96 /* Build configuration list for PBXNativeTarget "DayToDo" */;
 			buildPhases = (
+				435210E0DF139068700F655B /* [CP] Check Pods Manifest.lock */,
 				3C95499D29920B5A00704A96 /* Sources */,
 				3C95499E29920B5A00704A96 /* Frameworks */,
 				3C95499F29920B5A00704A96 /* Resources */,
+				24C33A7B13817228AF8EDB3F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24C33A7B13817228AF8EDB3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayToDo/Pods-DayToDo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayToDo/Pods-DayToDo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DayToDo/Pods-DayToDo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		435210E0DF139068700F655B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayToDo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C95499D29920B5A00704A96 /* Sources */ = {
@@ -327,6 +396,7 @@
 		};
 		3C9549B629920B5C00704A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE7B9DBE37CCFDD702504028 /* Pods-DayToDo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +425,7 @@
 		};
 		3C9549B729920B5C00704A96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9B0CB30136435E1BA4F5E9 /* Pods-DayToDo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
